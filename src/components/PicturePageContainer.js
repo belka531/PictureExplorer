@@ -5,8 +5,6 @@ import {getPicture} from '../actions/picture'
 
 
 class PicturePageContainer extends React.Component {
-  state = {}
-
   componentDidMount() {
     this.props.getPicture(this.props.match.params.id)
   }

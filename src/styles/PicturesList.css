@@ -1,0 +1,9 @@
+ul.piclist li{
+  display: inline-block;
+  margin: 24px;
+}
+.searchPic {
+  width: 600px;
+  height: 40px;
+  border-radius: 10px;  
+}
