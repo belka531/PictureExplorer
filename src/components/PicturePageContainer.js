@@ -5,22 +5,21 @@ import {getPicture} from '../actions/picture'
 
 
 class PicturePageContainer extends React.Component {
+  state = {}
+
   componentDidMount() {
     this.props.getPicture(this.props.match.params.id)
   }
 
   render() {
-    console.log(">>>", this.props)
     if (!this.props.picture) return 'Loading...'
-    return <PicturePage picture={this.props.picture} pictureId={this.props.match.params.id}
-    />
+    return <PicturePage picture={this.props.picture} />
   }
 }
 
 const mapStateToProps = (state) => {
-  console.log("map map", state)
   return {
-    picture: state.pictures.picture
+    picture: state.picture
   }
 }
 

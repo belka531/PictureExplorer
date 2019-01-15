@@ -3,9 +3,8 @@ export const PICTURE_FETCHED = 'PICTURE_FETCHED'
 
 export function fetchedPicture(picture) {
   return {
-    type: 'PICTURE_FETCHED',
-    payload: picture
-
+    type: PICTURE_FETCHED,
+    payload: picture,
   }
 }
 
