@@ -1,9 +1,37 @@
-ul.piclist li{
-  display: inline-block;
-  margin: 24px;
+.searchBar{
+  display: block;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.281);
 }
+
+.main{
+  width: 78%;
+  /* margin: auto; */
+  text-align: center;
+  padding: 110px;
+}
+
+.piclist{
+  list-style: none;
+  column-count: 3;
+}
+
+ul.piclist li{
+  margin-bottom: 20px;
+}
+
 .searchPic {
+  position: absolute;
+  left: 30%;
+  top: 30%;
   width: 600px;
   height: 40px;
-  border-radius: 10px;  
+  border-radius: 10px; 
+  text-align: center;
+  font-size: 15px; 
 }
+
