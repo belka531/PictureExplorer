@@ -9,19 +9,22 @@
 }
 
 .main{
+  display: table;
   width: 78%;
-  /* margin: auto; */
-  text-align: center;
+  height: 100%;
   padding: 110px;
+  text-align: center;
 }
 
-.piclist{
+.picList{
   list-style: none;
   column-count: 3;
 }
 
-ul.piclist li{
+ul.picList li{
   margin-bottom: 20px;
+  display: block;
+  max-width: 100%;
 }
 
 .searchPic {

@@ -7,16 +7,18 @@ class PicturesListContainer extends React.Component {
   componentDidMount() {
     this.props.getPictures()
   }
+  
   onChange = (event) => {
     if (event.target.value === '') {
       this.props.getPictures()
     } else {
       this.props.searchPictures(event.target.value.toLowerCase())
     }
+
   }
   render() {
     if (!this.props.pictures) return 'Loading...'
-    return <PicturesList pictures={this.props.pictures} onChange={this.onChange} />
+    return <PicturesList pictures={this.props.pictures} onChange={this.onChange}/>
   }
 }
 
